@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/michaeldobosh/frontend-project-44#readme",
   "bin": {
-    "code": "bin/brain-games.js"
+    "code": "bin/brain-games.js",
+    "brain-games": "bin/brain-games.js"
+  },
+  "dependencies": {
+    "make": "^0.8.1"
   }
 }
