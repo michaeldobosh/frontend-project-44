@@ -1,5 +1,4 @@
-#!/usr/bin/env node
-
+#!/usr/bin/env
 import readlineSync from 'readline-sync';
 
 function askName() {
