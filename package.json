@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/michaeldobosh/frontend-project-44#readme",
   "bin": {
-    "brain-even": "bin/brain-even.js"    
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js"
   },
   "dependencies": {
     "make": "^0.8.1",
