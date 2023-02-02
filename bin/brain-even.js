@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 import readlineSync from 'readline-sync';
 
 function askName() {
@@ -20,7 +21,7 @@ function askName() {
         console.log('Correct!');
         if (i === 2) console.log(`Congratulations, ${yourName}`);
       } else {
-        console.log("'" + answer + "' is wrong answer ;(. Correct answer was " + "'" + correctAnswer + "'");
+        console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'`);
         console.log(`Let's try again, ${yourName}`);
         break;
       }
