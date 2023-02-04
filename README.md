@@ -7,3 +7,5 @@
 https://asciinema.org/connect/fdb310ba-6de1-4bce-9b24-0e0d064e912e
 ### asciicast about game brain-calc
 https://asciinema.org/connect/fdb310ba-6de1-4bce-9b24-0e0d064e912e
+### asciicast about game brain-gcd
+https://asciinema.org/connect/fdb310ba-6de1-4bce-9b24-0e0d064e912e

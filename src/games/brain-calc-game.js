@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import gameRun from '../index.js';
 
 function brainCalcGame() {

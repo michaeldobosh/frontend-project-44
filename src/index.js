@@ -8,7 +8,7 @@ function gameRun(description, correct, question) {
     for (let i = 0; i < 3; i += 1) {
       const rand = [];
       for (let j = 0; j < 2; j += 1) {
-        rand.push(Math.floor(Math.random() * 10));
+        rand.push(Math.ceil(Math.random() * 50));
       }
       console.log(question(...rand));
       const answer = readlineSync.question('Your answer: ');
