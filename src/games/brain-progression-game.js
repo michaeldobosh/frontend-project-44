@@ -21,7 +21,7 @@ function brainProgressionGame() {
     index = Math.floor(Math.random() * outputNum.length);
     hideNumber = outputNum[index];
     outputNum[index] = '..';
-    return `Question: ${outputNum}`;
+    return `Question: ${outputNum.join(' ')}`;
   };
   const correct = () => {
     outputNum = progression(random2());
