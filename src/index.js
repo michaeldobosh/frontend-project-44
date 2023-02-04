@@ -6,7 +6,7 @@ const greetings = () => {
   return yourName;
 };
 const userName = greetings();
-const comparison = (correct, question, name) => {
+const comparsion = (correct, question, name) => {
   for (let i = 0; i < 3; i += 1) {
     const rand = [];
     for (let j = 0; j < 2; j += 1) {
@@ -28,7 +28,7 @@ const comparison = (correct, question, name) => {
 
 function gameRun(description, correct, question) {
   console.log(description);
-  comparison(correct, question, userName);
+  comparsion(correct, question, userName);
 }
 
 export default gameRun;
