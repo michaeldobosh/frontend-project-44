@@ -11,3 +11,5 @@ https://asciinema.org/connect/fdb310ba-6de1-4bce-9b24-0e0d064e912e
 https://asciinema.org/connect/fdb310ba-6de1-4bce-9b24-0e0d064e912e
 ### asciicast about game brain-progression
 https://asciinema.org/connect/fdb310ba-6de1-4bce-9b24-0e0d064e912e
+### asciicast about game brain-prime
+https://asciinema.org/connect/fdb310ba-6de1-4bce-9b24-0e0d064e912e
