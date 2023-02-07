@@ -1,30 +1,20 @@
 import gameRun from '../index.js';
 
 const description = 'What is the result of the expression?';
-const signs = ['+', '-', '*'];
-const sign = (data) => data[Math.floor(Math.random() * 3)];
-let getSign = sign(signs);
+const sign = () => ['+', '-', '*'][Math.floor(Math.random() * 3)];
+let getSign = sign();
+const operation = (a, b) => {
+  if (getSign === '+') return { question: `Question: ${a} + ${b}`, answer: String(a + b) };
+  if (getSign === '-') return { question: `Question: ${a} - ${b}`, answer: String(a - b) };
+  return { question: `Question: ${a} * ${b}`, answer: String(a * b) };
+};
 const correct = (rand, rand2) => {
-  if (getSign === '+') {
-    getSign = sign(signs);
-    return String(rand + rand2);
-  }
-  if (getSign === '-') {
-    getSign = sign(signs);
-    return String(rand - rand2);
-  }
-  getSign = sign(signs);
-  return String(rand * rand2);
+  const result = operation(rand, rand2);
+  getSign = sign();
+  return result.answer;
 };
-const question = (rand, rand2) => {
-  if (getSign === '+') return `Question: ${rand} + ${rand2}`;
-  if (getSign === '-') return `Question: ${rand} - ${rand2}`;
-  return `Question: ${rand} * ${rand2}`;
-};
-function brainCalcGame(rand, rand2) {
-  correct(rand, rand2);
-  question(rand, rand2);
-  gameRun(description, correct, question, sign);
-}
+const question = (rand, rand2) => operation(rand, rand2).question;
+
+const brainCalcGame = () => gameRun(description, correct, question, sign);
 
 export default brainCalcGame;
