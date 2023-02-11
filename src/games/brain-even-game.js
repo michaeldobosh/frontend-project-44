@@ -2,7 +2,7 @@ import gameRun from '../index.js';
 
 function brainEvenGame() {
   const description = 'Answer "yes" if the number is even, otherwise answer "no".';
-  const correct = (rand) => {
+  const answer = (rand) => {
     if (rand % 2 === 0) {
       return 'yes';
     }
@@ -10,7 +10,7 @@ function brainEvenGame() {
   };
   const question = (rand) => `Question: ${rand}`;
 
-  gameRun(description, correct, question);
+  gameRun(description, question, answer);
 }
 
 export default brainEvenGame;

@@ -21,7 +21,7 @@ const question = () => {
   outputNum[index] = '..';
   return `Question: ${outputNum.join(' ')}`;
 };
-const correct = () => {
+const answer = () => {
   outputNum = progression(random2());
   index = Math.floor(Math.random() * outputNum.length);
   return String(hideNumber);
@@ -29,8 +29,8 @@ const correct = () => {
 function brainProgressionGame() {
   const description = 'What number is missing in the progression.';
   question();
-  correct();
-  gameRun(description, correct, question);
+  answer();
+  gameRun(description, question, answer);
 }
 
 export default brainProgressionGame;

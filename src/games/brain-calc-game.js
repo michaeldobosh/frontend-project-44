@@ -8,13 +8,13 @@ const operation = (a, b) => {
   if (getSign === '-') return { question: `Question: ${a} - ${b}`, answer: String(a - b) };
   return { question: `Question: ${a} * ${b}`, answer: String(a * b) };
 };
-const correct = (rand, rand2) => {
+const answer = (rand, rand2) => {
   const result = operation(rand, rand2);
   getSign = sign();
   return result.answer;
 };
 const question = (rand, rand2) => operation(rand, rand2).question;
 
-const brainCalcGame = () => gameRun(description, correct, question, sign);
+const brainCalcGame = () => gameRun(description, question, answer);
 
 export default brainCalcGame;
