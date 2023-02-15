@@ -1,30 +1,23 @@
 import readlineSync from 'readline-sync';
-import greetings from './sli.js';
+import greetings from './cli.js';
 
-const userName = greetings();
-const comparsion = (question, answer, name) => {
+const gameRuls = (description, lounch) => {
+  const userName = greetings();
+  console.log(description);
   for (let i = 0; i < 3; i += 1) {
-    const rand = [];
-    for (let j = 0; j < 2; j += 1) {
-      rand.push(Math.ceil(Math.random() * 50));
-    }
-    console.log(question(...rand));
+    const up = Math.ceil;
+    const rand = [up(Math.random() * 50), up(Math.random() * 50)];
+    const [question, answer] = lounch(...rand);
+    console.log(`Question: ${question}`);
     const response = readlineSync.question('Your answer: ');
-    const correctAnswer = answer(...rand);
+    const correctAnswer = answer;
     if (response === correctAnswer) {
       console.log('Correct!');
-      if (i === 2) console.log(`Congratulations, ${name}!`);
     } else {
-      console.log(`'${response}' is wrong answer ;(. Correct answer was '${correctAnswer}'`);
-      console.log(`Let's try again, ${name}!`);
-      break;
+      return console.log(`'${response}' is wrong answer ;(. Correct answer was '${correctAnswer}'. \nLet's try again, ${userName}!`);
     }
   }
+  return console.log(`Congratulations, ${userName}!`);
 };
 
-function gameRun(description, question, answer) {
-  console.log(description);
-  comparsion(question, answer, userName);
-}
-
-export default gameRun;
+export default gameRuls;

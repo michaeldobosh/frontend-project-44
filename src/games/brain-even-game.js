@@ -1,16 +1,11 @@
-import gameRun from '../index.js';
+import gameRuls from '../index.js';
 
-function brainEvenGame() {
+const brainEvenGame = () => {
   const description = 'Answer "yes" if the number is even, otherwise answer "no".';
-  const answer = (rand) => {
-    if (rand % 2 === 0) {
-      return 'yes';
-    }
-    return 'no';
-  };
-  const question = (rand) => `Question: ${rand}`;
+  const isEven = (num) => num % 2 === 0;
+  const lounch = (num) => [`${num}`, (isEven(num) ? 'yes' : 'no')];
 
-  gameRun(description, question, answer);
-}
+  gameRuls(description, lounch);
+};
 
 export default brainEvenGame;

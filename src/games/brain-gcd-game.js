@@ -2,18 +2,13 @@ import gameRun from '../index.js';
 
 function brainGcdGame() {
   const description = 'Find the greatest common divisor of given numbers.';
-  const question = (rand, rand2) => `Question: ${rand} ${rand2}`;
-  const answer = (rand, rand2) => {
-    let data = [rand, rand2].sort();
-    for (let i = data[0]; i >= 1; i -= 1) {
-      if (data[0] % i === 0 && data[1] % i === 0) {
-        data = String(i);
-      }
-    }
-    return data;
+  const getDivisor = (num, num2) => {
+    if (num > num2) return getDivisor(num - num2, num2);
+    return num < num2 ? getDivisor(num, num2 - num) : String(num);
   };
+  const lounch = (num, num2) => [`${num} ${num2}`, getDivisor(num, num2)];
 
-  gameRun(description, question, answer);
+  gameRun(description, lounch);
 }
 
 export default brainGcdGame;

@@ -1,20 +1,17 @@
-import gameRun from '../index.js';
+import gameRuls from '../index.js';
 
-const description = 'What is the result of the expression?';
-const sign = () => ['+', '-', '*'][Math.floor(Math.random() * 3)];
-let getSign = sign();
-const operation = (a, b) => {
-  if (getSign === '+') return { question: `Question: ${a} + ${b}`, answer: String(a + b) };
-  if (getSign === '-') return { question: `Question: ${a} - ${b}`, answer: String(a - b) };
-  return { question: `Question: ${a} * ${b}`, answer: String(a * b) };
-};
-const answer = (rand, rand2) => {
-  const result = operation(rand, rand2);
-  getSign = sign();
-  return result.answer;
-};
-const question = (rand, rand2) => operation(rand, rand2).question;
+const brainCalcGame = () => {
+  const description = 'What is the result of the expression?';
+  const data = () => ['+', '-', '*'][Math.floor(Math.random() * 3)];
+  const lounch = (a, b) => {
+    const sign = data();
+    const output = `${a} ${sign} ${b}`;
+    if (sign === '+') return [output, String(a + b)];
+    if (sign === '-') return [output, String(a - b)];
+    return [output, String(a * b)];
+  };
 
-const brainCalcGame = () => gameRun(description, question, answer);
+  gameRuls(description, lounch);
+};
 
 export default brainCalcGame;
