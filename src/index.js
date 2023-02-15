@@ -1,22 +1,21 @@
 import readlineSync from 'readline-sync';
 import greetings from './cli.js';
 
-const gameRuls = (description, lounch) => {
+const playGames = (description, rounds) => {
   const userName = greetings();
   console.log(description);
-  for (let i = 0; i < 3; i += 1) {
-    const rand = [Math.ceil(Math.random() * 50), Math.ceil(Math.random() * 50)];
-    const [question, answer] = lounch(...rand);
-    console.log(`Question: ${question}`);
+  const [question, answer, raunds] = rounds();
+  for (let raund = 0; raund < raunds; raund += 1) {
+    console.log(`Question: ${question[raund]}`);
     const response = readlineSync.question('Your answer: ');
-    if (response === answer) {
+    if (response === answer[raund]) {
       console.log('Correct!');
     } else {
-      return console.log(`'${response}' is wrong answer ;(. Correct answer was '${answer}'. 
-      \nLet's try again, ${userName}!`);
+      return console.log(`'${response}' is wrong answer ;(. Correct answer was '${answer[raund]}'.\nLet's try again, ${userName}!`);
     }
   }
   return console.log(`Congratulations, ${userName}!`);
 };
 
-export default gameRuls;
+export default playGames;
+export const random = (min, max) => Math.floor(Math.random() * (max - min) + min);

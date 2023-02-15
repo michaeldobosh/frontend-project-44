@@ -1,4 +1,4 @@
-import gameRuls from '../index.js';
+import playGames, { random } from '../index.js';
 
 function brainPrimeGame() {
   const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
@@ -9,9 +9,20 @@ function brainPrimeGame() {
     }
     return true;
   };
-  const lounch = (num) => [`Question: ${num}`, (isPrime(num) ? 'yes' : 'no')];
-
-  gameRuls(description, lounch);
+  const getAnswer = (num) => (isPrime(num) ? 'yes' : 'no');
+  const gameRuls = () => {
+    let raunds = 0;
+    const answers = [];
+    const questions = [];
+    while (raunds < 3) {
+      const number = [random(1, 50)];
+      answers.push(getAnswer(number));
+      questions.push(`${number}`);
+      raunds += 1;
+    }
+    return [questions, answers, raunds];
+  };
+  playGames(description, gameRuls);
 }
 
 export default brainPrimeGame;
