@@ -5,16 +5,16 @@
 <a href="https://codeclimate.com/github/michaeldobosh/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/becbb454c0132449facd/maintainability" /></a>
 
 ### asciicast about game brain-even
-[![asciicast](https://asciinema.org/a/MFKZffrzDllhuH23Bkhuqp0QA.svg)](https://asciinema.org/a/MFKZffrzDllhuH23Bkhuqp0QA)
+[![asciicast](https://asciinema.org/a/HqYlaL6iOuI5os5tn9Pf3OYD2.svg)](https://asciinema.org/a/HqYlaL6iOuI5os5tn9Pf3OYD2)
 
 ### asciicast about game brain-calc
-[![asciicast](https://asciinema.org/a/pS0QGTUE6QJhgvGRVUyqVhpDT.svg)](https://asciinema.org/a/pS0QGTUE6QJhgvGRVUyqVhpDT)
+[![asciicast](https://asciinema.org/a/Ob2fqHl6bJyB8QWkGPOWr0bD1.svg)](https://asciinema.org/a/Ob2fqHl6bJyB8QWkGPOWr0bD1)
 
 ### asciicast about game brain-gcd
-[![asciicast](https://asciinema.org/a/PZQ2GRm3mnqKeln1Y02WX8wcC.svg)](https://asciinema.org/a/PZQ2GRm3mnqKeln1Y02WX8wcC)
+[![asciicast](https://asciinema.org/a/d8HnO5qUdDGwCE0ywpl1BIzDf.svg)](https://asciinema.org/a/d8HnO5qUdDGwCE0ywpl1BIzDf)
 
 ### asciicast about game brain-progression
-[![asciicast](https://asciinema.org/a/n0od9uYmmVl7npAqjo7nf7crL.svg)](https://asciinema.org/a/n0od9uYmmVl7npAqjo7nf7crL)
+[![asciicast](https://asciinema.org/a/KkBcFrXlh77Q6ESlpWMgCrvZe.svg)](https://asciinema.org/a/KkBcFrXlh77Q6ESlpWMgCrvZe)
 
 ### asciicast about game brain-prime
-[![asciicast](https://asciinema.org/a/JLWc6aV1wqjgdm6X8tQuezW0u.svg)](https://asciinema.org/a/JLWc6aV1wqjgdm6X8tQuezW0u)
+[![asciicast](https://asciinema.org/a/8lvhdYyezos3C62JFtpVFoQez.svg)](https://asciinema.org/a/8lvhdYyezos3C62JFtpVFoQez)

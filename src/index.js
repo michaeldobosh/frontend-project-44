@@ -1,10 +1,11 @@
 import readlineSync from 'readline-sync';
-import greetings from './cli.js';
 
 const playGames = (description, rounds) => {
-  const userName = greetings();
-  const numberOfRounds = 3;
+  console.log('Welcome to the Brain Games!');
+  const userName = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${userName}!`);
   console.log(description);
+  const numberOfRounds = 3;
   for (let i = 1; i <= numberOfRounds; i += 1) {
     const [question, answer] = rounds();
     console.log(`Question: ${question}`);
