@@ -2,7 +2,7 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "type": "module",
-  "description": "[![Actions Status](https://github.com/michaeldobosh/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/michaeldobosh/frontend-project-44/actions)",
+  "description": "Небольшой набор игр из серии BrainGames, дающий возможность проверить свои арифметические способности. A small set of games from the BrainGames series, giving you the opportunity to test your arithmetic skills",
   "main": "index.js",
   "scripts": {
     "test": "__tests__/game.test.js"
