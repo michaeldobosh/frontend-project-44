@@ -1,4 +1,5 @@
-import playGames, { random } from '../index.js';
+import playGames from '../index.js';
+import random from '../random.js';
 
 const description = 'What number is missing in the progression.';
 const progression = (interval) => {

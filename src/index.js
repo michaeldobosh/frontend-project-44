@@ -1,13 +1,13 @@
 import readlineSync from 'readline-sync';
 
-const playGames = (description, roundDataGenerator) => {
+const playGames = (description, generateRoundData) => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
   console.log(description);
   const rounds = 3;
   for (let i = 1; i <= rounds; i += 1) {
-    const [question, answer] = roundDataGenerator();
+    const [question, answer] = generateRoundData();
     console.log(`Question: ${question}`);
     const response = readlineSync.question('Your answer: ');
     if (response === answer) {
@@ -20,4 +20,3 @@ const playGames = (description, roundDataGenerator) => {
 };
 
 export default playGames;
-export const random = (min, max) => Math.floor(Math.random() * (max - min) + min);
